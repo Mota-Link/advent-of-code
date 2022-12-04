@@ -1,7 +1,7 @@
-use std::collections::HashSet;
+use std::{collections::HashSet, fs::read_to_string};
 
 pub fn part_1() -> u32 {
-    std::fs::read_to_string("./src/aoc_2022/input/input_2022_03")
+    read_to_string("./src/aoc_2022/input/input_2022_03")
         .unwrap()
         .lines()
         .map(|s| s.split_at(s.len() / 2))
@@ -41,7 +41,7 @@ pub fn part_1() -> u32 {
 }
 
 pub fn part_2() -> u32 {
-    std::fs::read_to_string("./src/aoc_2022/input/input_2022_03")
+    read_to_string("./src/aoc_2022/input/input_2022_03")
         .unwrap()
         .lines()
         .collect::<Vec<_>>()
