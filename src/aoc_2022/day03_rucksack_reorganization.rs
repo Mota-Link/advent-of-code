@@ -1,8 +1,7 @@
 use std::{collections::HashSet, fs::read_to_string};
 
-pub fn part_1() -> u32 {
-    read_to_string("./src/aoc_2022/input/input_2022_03")
-        .unwrap()
+fn part_1(input: &str) -> u32 {
+    input
         .lines()
         .map(|s| s.split_at(s.len() / 2))
         .map(|(s1, s2)| {
@@ -40,9 +39,8 @@ pub fn part_1() -> u32 {
         .sum()
 }
 
-pub fn part_2() -> u32 {
-    read_to_string("./src/aoc_2022/input/input_2022_03")
-        .unwrap()
+fn part_2(input: &str) -> u32 {
+    input
         .lines()
         .collect::<Vec<_>>()
         .chunks(3)
@@ -90,4 +88,35 @@ pub fn part_2() -> u32 {
             }
         })
         .sum()
+}
+
+pub fn day03_answer() {
+    let input = read_to_string("./src/aoc_2022/input/input_2022_03").unwrap();
+    println!(
+        "Part 1: {}\nPart 2: {}",
+        part_1(&input.trim()),
+        part_2(&input.trim())
+    )
+}
+
+#[test]
+fn part_1_test() {
+    let input = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
+                    jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
+                    PmmdzqPrVvPwwTWBwg\n\
+                    wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\
+                    ttgJtRGJQctTZtZT\n\
+                    CrZsJsPPZsGzwwsLwLmpwMDw";
+    assert_eq!(part_1(input), 157);
+}
+
+#[test]
+fn part_2_test() {
+    let input = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
+                    jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
+                    PmmdzqPrVvPwwTWBwg\n\
+                    wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\
+                    ttgJtRGJQctTZtZT\n\
+                    CrZsJsPPZsGzwwsLwLmpwMDw";
+    assert_eq!(part_2(input), 70);
 }
