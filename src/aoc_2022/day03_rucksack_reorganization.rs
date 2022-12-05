@@ -101,7 +101,7 @@ pub fn day03_answer() {
 
 #[test]
 fn part_1_test() {
-    let input = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
+    let input: &str = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
                        jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
                        PmmdzqPrVvPwwTWBwg\n\
                        wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\
@@ -112,7 +112,7 @@ fn part_1_test() {
 
 #[test]
 fn part_2_test() {
-    let input = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
+    let input: &str = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
                        jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
                        PmmdzqPrVvPwwTWBwg\n\
                        wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\

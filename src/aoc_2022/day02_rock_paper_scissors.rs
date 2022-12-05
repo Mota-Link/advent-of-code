@@ -44,7 +44,7 @@ pub fn day02_answer() {
 
 #[test]
 fn part_1_test() {
-    let input = "A Y\n\
+    let input: &str = "A Y\n\
                        B X\n\
                        C Z";
 
@@ -53,7 +53,7 @@ fn part_1_test() {
 
 #[test]
 fn part_2_test() {
-    let input = "A Y\n\
+    let input: &str = "A Y\n\
                        B X\n\
                        C Z";
 

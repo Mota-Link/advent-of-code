@@ -44,7 +44,7 @@ pub fn day04_answer() {
 
 #[test]
 fn part_1_test() {
-    let input = "2-4,6-8\n\
+    let input: &str = "2-4,6-8\n\
                        2-3,4-5\n\
                        5-7,7-9\n\
                        2-8,3-7\n\
@@ -55,7 +55,7 @@ fn part_1_test() {
 
 #[test]
 fn part_2_test() {
-    let input = "2-4,6-8\n\
+    let input: &str = "2-4,6-8\n\
                        2-3,4-5\n\
                        5-7,7-9\n\
                        2-8,3-7\n\
