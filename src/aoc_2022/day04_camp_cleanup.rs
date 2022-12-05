@@ -1,6 +1,6 @@
 use std::fs::read_to_string;
 
-pub fn part_1(input: &str) -> usize {
+fn part_1(input: &str) -> usize {
     input
         .lines()
         .filter(|s| {
@@ -10,7 +10,7 @@ pub fn part_1(input: &str) -> usize {
         .count()
 }
 
-pub fn part_2(input: &str) -> usize {
+fn part_2(input: &str) -> usize {
     input
         .lines()
         .filter(|s| {
@@ -45,21 +45,21 @@ pub fn day04_answer() {
 #[test]
 fn part_1_test() {
     let input = "2-4,6-8\n\
-                    2-3,4-5\n\
-                    5-7,7-9\n\
-                    2-8,3-7\n\
-                    6-6,4-6\n\
-                    2-6,4-8";
+                       2-3,4-5\n\
+                       5-7,7-9\n\
+                       2-8,3-7\n\
+                       6-6,4-6\n\
+                       2-6,4-8";
     assert_eq!(part_1(input), 2);
 }
 
 #[test]
 fn part_2_test() {
     let input = "2-4,6-8\n\
-                    2-3,4-5\n\
-                    5-7,7-9\n\
-                    2-8,3-7\n\
-                    6-6,4-6\n\
-                    2-6,4-8";
+                       2-3,4-5\n\
+                       5-7,7-9\n\
+                       2-8,3-7\n\
+                       6-6,4-6\n\
+                       2-6,4-8";
     assert_eq!(part_2(input), 4);
 }

@@ -102,21 +102,21 @@ pub fn day03_answer() {
 #[test]
 fn part_1_test() {
     let input = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
-                    jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
-                    PmmdzqPrVvPwwTWBwg\n\
-                    wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\
-                    ttgJtRGJQctTZtZT\n\
-                    CrZsJsPPZsGzwwsLwLmpwMDw";
+                       jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
+                       PmmdzqPrVvPwwTWBwg\n\
+                       wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\
+                       ttgJtRGJQctTZtZT\n\
+                       CrZsJsPPZsGzwwsLwLmpwMDw";
     assert_eq!(part_1(input), 157);
 }
 
 #[test]
 fn part_2_test() {
     let input = "vJrwpWtwJgWrhcsFMMfFFhFp\n\
-                    jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
-                    PmmdzqPrVvPwwTWBwg\n\
-                    wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\
-                    ttgJtRGJQctTZtZT\n\
-                    CrZsJsPPZsGzwwsLwLmpwMDw";
+                       jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n\
+                       PmmdzqPrVvPwwTWBwg\n\
+                       wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n\
+                       ttgJtRGJQctTZtZT\n\
+                       CrZsJsPPZsGzwwsLwLmpwMDw";
     assert_eq!(part_2(input), 70);
 }
