@@ -33,8 +33,8 @@ fn part_2(input: &str) -> u64 {
     calories.into_iter().rev().take(3).sum()
 }
 
-pub fn day01_answer() {
-    let input = read_to_string("./src/aoc_2022/input/input_2022_01").unwrap();
+pub fn print_answer() {
+    let input = read_to_string("./src/aoc_2022/data/input_2022_01").unwrap();
     println!(
         "Part 1: {}\nPart 2: {}",
         part_1(&input.trim()),

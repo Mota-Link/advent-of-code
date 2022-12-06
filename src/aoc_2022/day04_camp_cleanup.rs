@@ -33,8 +33,8 @@ fn parser(s: &str) -> (u8, u8, u8, u8) {
     )
 }
 
-pub fn day04_answer() {
-    let input = read_to_string("./src/aoc_2022/input/input_2022_04").unwrap();
+pub fn print_answer() {
+    let input = read_to_string("./src/aoc_2022/data/input_2022_04").unwrap();
     println!(
         "Part 1: {}\nPart 2: {}",
         part_1(&input.trim()),

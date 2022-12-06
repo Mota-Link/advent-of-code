@@ -62,8 +62,8 @@ fn get_stacks_top(stacks: Vec<Vec<char>>) -> String {
         .collect()
 }
 
-pub fn day05_answer() {
-    let input = read_to_string("./src/aoc_2022/input/input_2022_05").unwrap();
+pub fn print_answer() {
+    let input = read_to_string("./src/aoc_2022/data/input_2022_05").unwrap();
     println!(
         "Part 1: {}\nPart 2: {}",
         part_1(&input.trim(), STACKS.clone()),

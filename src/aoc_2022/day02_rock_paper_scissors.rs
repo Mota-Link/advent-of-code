@@ -33,8 +33,8 @@ fn part_2(input: &str) -> u32 {
     input.lines().map(|s| *SCORE_PART_2.get(s).unwrap()).sum()
 }
 
-pub fn day02_answer() {
-    let input = read_to_string("./src/aoc_2022/input/input_2022_02").unwrap();
+pub fn print_answer() {
+    let input = read_to_string("./src/aoc_2022/data/input_2022_02").unwrap();
     println!(
         "Part 1: {}\nPart 2: {}",
         part_1(&input.trim()),

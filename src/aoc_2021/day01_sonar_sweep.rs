@@ -23,8 +23,8 @@ fn part_2(input: &str) -> usize {
         .count()
 }
 
-pub fn day01_answer() {
-    let input = read_to_string("./src/aoc_2021/input/input_2021_01").unwrap();
+pub fn print_answer() {
+    let input = read_to_string("./src/aoc_2021/data/input_2021_01").unwrap();
     println!(
         "Part 1: {}\nPart 2: {}",
         part_1(&input.trim()),
