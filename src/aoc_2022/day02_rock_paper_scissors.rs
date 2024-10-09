@@ -1,8 +1,7 @@
-use lazy_static::lazy_static;
-use std::{collections::HashMap, fs::read_to_string};
+use std::{collections::HashMap, fs::read_to_string, sync::LazyLock};
 
-lazy_static! {
-    static ref SCORE_PART_1: HashMap<&'static str, u32> = HashMap::from([
+static SCORE_PART_1: LazyLock<HashMap<&'static str, u32>> = LazyLock::new(|| {
+    HashMap::from([
         ("B X", 1),
         ("C Y", 2),
         ("A Z", 3),
@@ -12,8 +11,11 @@ lazy_static! {
         ("C X", 7),
         ("A Y", 8),
         ("B Z", 9),
-    ]);
-    static ref SCORE_PART_2: HashMap<&'static str, u32> = HashMap::from([
+    ])
+});
+
+static SCORE_PART_2: LazyLock<HashMap<&'static str, u32>> = LazyLock::new(|| {
+    HashMap::from([
         ("A X", 3),
         ("B X", 1),
         ("C X", 2),
@@ -23,8 +25,8 @@ lazy_static! {
         ("A Z", 8),
         ("B Z", 9),
         ("C Z", 7),
-    ]);
-}
+    ])
+});
 
 fn part_1(input: &str) -> u32 {
     input.lines().map(|s| *SCORE_PART_1.get(s).unwrap()).sum()

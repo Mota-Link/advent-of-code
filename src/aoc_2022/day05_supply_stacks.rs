@@ -1,9 +1,7 @@
-use std::fs::read_to_string;
+use std::{fs::read_to_string, sync::LazyLock};
 
-use lazy_static::lazy_static;
-
-lazy_static! {
-    static ref STACKS: Vec<Vec<char>> = vec![
+static STACKS: LazyLock<Vec<Vec<char>>> = LazyLock::new(|| {
+    vec![
         vec!['S', 'T', 'H', 'F', 'W', 'R'],
         vec!['S', 'G', 'D', 'Q', 'W'],
         vec!['B', 'T', 'W'],
@@ -13,8 +11,8 @@ lazy_static! {
         vec!['Z', 'B', 'R', 'T', 'W', 'G', 'P'],
         vec!['N', 'G', 'M', 'T', 'C', 'J', 'R'],
         vec!['L', 'G', 'B', 'W'],
-    ];
-}
+    ]
+});
 
 fn part_1(input: &str, mut stacks: Vec<Vec<char>>) -> String {
     input
